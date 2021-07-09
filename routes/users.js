@@ -3,19 +3,6 @@ import { getUsers, addUser, getUser, deleteUser, editUser } from "../controllers
 
 const router = express.Router();
 
-let users = [
-  {
-    firstName: "Iman",
-    lastName: "Boudellaa",
-    age: 24
-  },
-  {
-    firstName: "Iman2",
-    lastName: "Boudellaa2",
-    age: 22
-  }
-]
-
 router.get('/', getUsers);
 
 router.post('/', addUser)
